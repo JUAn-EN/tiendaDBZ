@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1d1d1d; /* Fondo oscuro */
+    position: relative; /* Añadido para posicionar la nube */
+}
+
+.logo img {
+    width: 150px;
+}
+
+.options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.option {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.option:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+.cloud {
+    background-image: url('/client/src/assets/img/cloud.jpg'); /* Imagen de la nube */
+    width: 100px;
+    height: 60px;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#inicio:hover #nube, #registrate:hover #nube {
+    opacity: 1;
+    animation: seguimiento 1s linear forwards;
+}
+
+@keyframes seguimiento {
+    0% {
+        transform: translateY(0) scale(0.8);
+    }
+    100% {
+        transform: translateY(-50px) scale(1);
+    }
+}
+
+#nube:hover {
+    animation: movimiento 2s infinite alternate ease-in-out;
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+/*aca nimacion de el dragon*/ 
+
+.shenlong-profile {
+    position: relative;
+    animation: shenlong-move 20s linear infinite; /* 20s para una rotación más rápida */
+}
+
+.logo {
+    max-width: 100%; /* Ajusta el tamaño máximo según tus necesidades */
+}
+
+@keyframes shenlong-move {
+    0% {
+        transform: translateX(0) ;
+    }
+    45% {
+        transform: translateX(100%); /* Mueve la imagen hacia la derecha sin rotación */
+    }
+    50% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(100%) 
+    }
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cart img {
+    width: 30px; /* Tamaño del icono de carrito */
+    height: auto;
+}
