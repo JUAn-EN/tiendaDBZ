@@ -1,1 +1,37 @@
 <app-header></app-header>
+<app-lfiguras></app-lfiguras>
+<section class="contenedor-products">
+    <div class="cards">
+        <div class="covers">
+          <img src="../../assets/img/gogetasj4-1 (1).png" alt="">
+          <div class="img_back"></div>
+        </div>
+        <div class="description">
+          <h2>gogeta ssj 4</h2>
+          <a [routerLink]="['/ventaIn']" (mouseenter)="mostrarNuve('audio1')" (mouseleave)="ocultarNuve('audio1')" (click)="reproducirAudio1()">Verlo </a>
+          <div class="nuve" [hidden]="!nuveVisible['audio1']">
+            <img src="../../assets/img/nuveboladora.png" alt="nuveboladora">
+          </div>
+          <audio id="audio1" src="/assets/audios/here-goes_7vheSQi.mp3" #audio1></audio>
+          <p>descripción</p>
+        </div>
+      </div>
+      
+      <div class="cards">
+        <div class="covers">
+          <img src="../../assets/img/gokuFin.png" alt="">
+          <div class="img_back"></div>
+        </div>
+        <div class="description">
+          <h2>goku base fin</h2>
+          <a [routerLink]="['/ventaIn']" (mouseenter)="mostrarNuve('audio2')" (mouseleave)="ocultarNuve('audio2')" (click)="reproducirAudio2()">Verlo </a>
+          <div class="nuve" [hidden]="!nuveVisible['audio2']">
+            <img src="../../assets/img/nuveboladora.png" alt="nuveboladora">
+          </div>
+          <audio id="audio2" src="/assets/audios/hey-its-me-goku.mp3" #audio2></audio>
+          <p>descripción</p>
+        </div>
+      </div>
+      
+</section>
+<app-footer2></app-footer2>
