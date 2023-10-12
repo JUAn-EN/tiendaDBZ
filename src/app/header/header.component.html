@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-     <header>
+    <header appScrollListener>
         <div class="logo">
         <h2>Dragon Ball</h2>
         </div>
 
         <div class="navigation">
-          <input type="text" id="nav-checkbox">
+          <input type="checkbox" id="nav-checkbox">
           <label for="nav-checkbox" class="nav-toggle">
-            <img src="open.png" alt="open menu" class="open">
-            <img src="close.png" alt="close menu" class="close">
+            <img src="../../assets/img/nuveboladora.png" alt="open menu" class="open">
         </label>
         <ul class="nav-menu">
             <li><a href="#">Inicio</a></li>
@@ -28,11 +19,6 @@
      <div class="hero">
         <h1>Bienvenid@ a nuestra tienda en linea de Dragon Ball</h1>
         <h3>El paraíso de los fanaticos de esta épica serie! Estamos encantados de recibirte en nuestro mundo lleno de emocionantes aventuras, poderosos guerreros y figuras colleccionables que háran latir tu corazón con nostalgia y emoción.</h3>
-        <a href="">Figuras</a>
+        <a href="#">Figuras</a>
 
      </div>
-    <div class="shenlong-profile">
-        <img [src]="'./assets/img/' + imagenes[0]"  class="logo" alt="Perfil de Shenlong">
-    </div>
-</body>
-</html>
