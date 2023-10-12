@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { Footer2Component } from './footer2/footer2.component';
 import { LfigurasComponent } from './lfiguras/lfiguras.component';
 import { InterfasVentaComponent } from './interfas-venta/interfas-venta.component';
+import { InterfasVentaGokuComponent } from './interfas-venta-goku/interfas-venta-goku.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { InterfasVentaComponent } from './interfas-venta/interfas-venta.componen
     FooterComponent,
     Footer2Component,
     LfigurasComponent,
-    InterfasVentaComponent
+    InterfasVentaComponent,
+    InterfasVentaGokuComponent
   ],
   imports: [
     BrowserModule,

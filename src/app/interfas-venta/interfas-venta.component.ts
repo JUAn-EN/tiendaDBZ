@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AudioService } from '../serivice/audio.service'; 
 
 @Component({
   selector: 'app-interfas-venta',
@@ -7,11 +6,8 @@ import { AudioService } from '../serivice/audio.service';
   styleUrls: ['./interfas-venta.component.css']
 })
 export class InterfasVentaComponent {
-  constructor(private audioService: AudioService) {}
-
-
-  
-  ngOnDestroy() {
-    this.audioService.detenerAudio();
+  imagenMostrada: string = ''; 
+  mostrarImagen(event: MouseEvent, url: string) {
+    this.imagenMostrada = url;
   }
 }
