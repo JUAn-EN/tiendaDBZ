@@ -31,9 +31,10 @@ right: 40px;
     top: -85px;
     left: 920px;
 }
-.gogetaC{
+.gokuC{
     position: absolute;
     left: 900px;
+    height:650px ;
 }
 .colecionGogeta{
     display: flex;

@@ -1,0 +1,42 @@
+<app-header></app-header>
+<section>
+    <div class="contenedor-padre">
+        <div class="contenedor-img">
+            <img src="../../assets/img/esfera4Estrellas.png" alt="esfera">
+            <img class="nube" src="../../assets/img/indicator.png" alt="nube">
+        </div>
+        <img class="gokuC" src="../../assets/img/gokuC.jpg" alt="goku">
+
+        <div class="contenedor-Prducto">
+            <div class="colecionGogeta" >
+                <img (mouseover)="mostrarImagen($event, '../../assets/img/goku/producGoku1.jpg')" src="../../assets/img/goku/producGoku1.jpg" alt="Producto">
+                <img (mouseover)="mostrarImagen($event, '../../assets/img/goku/producGoku2.jpg')" class="imgGogeta" src="../../assets/img/goku/producGoku2.jpg" alt="Producto">
+                <img (mouseover)="mostrarImagen($event, '../../assets/img/goku/producGoku3.jpg')" src="../../assets/img/goku/producGoku3.jpg" alt="Producto">
+                <img (mouseover)="mostrarImagen($event, '../../assets/img/goku/producGoku4.jpg')" src="../../assets/img/goku/producGoku4.jpg" alt="Producto">
+
+            </div>
+            
+            <div class="contenerdor-img">
+                <img class="gokuPequeño" src="../../assets/img/gokupequeño.png" alt="gokupequeño">
+                <div>
+                    <img [src]="imagenMostrada" alt="goku">
+                </div>
+            </div>
+        </div>
+        <div class="img-datos-border">
+            <img src="../../assets/img/gohan.jpg" alt="gohan">
+        </div>
+        <div class="comic-container">
+            <img class="corp" src="../../assets/img/CoporacionCAPSULE.png" alt="corp">
+            <span class="datos"><img src="../../assets/img/datos.png" alt="datos"></span>
+            <p>
+                Tamaño: 23cm <br>
+                Material: PVC <br>
+                Paquete: bolsa Opp <br>
+                Condición: 100% nuevo
+            </p>
+            <button class="dragon-ball-button">Agregar al Carrito</button>
+        </div>
+    </div>
+</section>
+<app-footer2></app-footer2>
