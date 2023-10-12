@@ -1,26 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
+    <header appScrollListener>
         <div class="logo">
             <img src="" alt="Dragon Ball Z Logo">
+
+        <h2>Dragon Ball</h2>
         </div>
-        <div class="search">
-            <input type="text" placeholder="Buscar figura">
+
+        <div class="navigation">
+          <input type="checkbox" id="nav-checkbox">
+          <label for="nav-checkbox" class="nav-toggle">
+            <img src="../../assets/img/nuveboladora.png" alt="open menu" class="open">
+        </label>
+        <ul class="nav-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Figuras</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Perfil</a></li>
+        </ul>
         </div>
-        <div class="options">
-            <a href="#" class="option" id="inicio">Inicio</a>
-            <a href="#" class="option" id="registrate">Regístrate</a>
-        </div>
-        <div class="cloud" id="nube"></div>
-    </header>
-    <div class="shenlong-profile">
-        <img [src]="'./assets/img/' + imagenes[0]"  class="logo" alt="Perfil de Shenlong">
-    </div>
-</body>
-</html>
+     </header>
+     <div class="hero">
+        <h1>Bienvenid@ a nuestra tienda en linea de Dragon Ball</h1>
+        <h3>El paraíso de los fanaticos de esta épica serie! Estamos encantados de recibirte en nuestro mundo lleno de emocionantes aventuras, poderosos guerreros y figuras colleccionables que háran latir tu corazón con nostalgia y emoción.</h3>
+        <a href="#">Figuras</a>
+
+     </div>

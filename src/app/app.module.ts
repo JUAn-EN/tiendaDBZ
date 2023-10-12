@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';  // Asegúrate de importar el módulo de enrutamiento
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { PrincipalComponent } from './principal/principal.component';
@@ -9,6 +10,7 @@ import { Footer2Component } from './footer2/footer2.component';
 import { LfigurasComponent } from './lfiguras/lfiguras.component';
 import { InterfasVentaComponent } from './interfas-venta/interfas-venta.component';
 import { InterfasVentaGokuComponent } from './interfas-venta-goku/interfas-venta-goku.component';
+import { ScrollListenerDirective } from './scroll/scroll-listener.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { InterfasVentaGokuComponent } from './interfas-venta-goku/interfas-venta
     LfigurasComponent,
     InterfasVentaComponent,
     InterfasVentaGokuComponent
+    ScrollListenerDirective
+
   ],
   imports: [
     BrowserModule,

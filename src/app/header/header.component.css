@@ -3,40 +3,130 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estilos del encabezado */
-header {
-    
+#nav-checkbox, .nav-toggle{
+    display: none;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0, 0.6)), url("../../assets/img/shen_long_esferas.jpg") no-repeat fixed bottom / cover;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
-    background-color: #1d1d1d; /* Fondo oscuro */
-    position: relative; /* Añadido para posicionar la nube */
+    text-align: center;
 }
 
-.logo img {
-    width: 150px;
-}
-
-.options {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.option {
-    text-decoration: none;
+.hero h1{
     color: #fff;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-    position: relative;
+    font-size: 60px;
+    line-height: 1;
+
 }
 
-.option:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+.hero h3{
+    color: #fff;
+    font-size: 26px;
+    font-weight: normal;
+    margin: 15 px 0;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    transition: background-color 0.5s ease;
+}
+
+.logo h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.nav-menu li{
+    display: inline-block;
+}
+
+.nav-menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0 15px;
+
+}
+
+.nav-menu li a:hover{
+    color: rgba(229, 207, 16, 0.973);
+     
+}
+
+.active{
+    background: rgb(80, 128, 249)
+}
+
+/*una funcionalidad que no se bien para que me sirve
+.active a:hover{ 
+    background:  rgb(80, 128, 249) !important;
+}*/
+
+@media only screen and (max-width: 650px){
+    header{
+        display: block;
+    }
+
+    .logo{
+        margin-left: 15px;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        margin: 0 1rem;
+        top: 25px;
+        right: 0;
+    }
+
+    .nav-toggle img{
+        width: 25px;
+    }
+
+    .close,
+    input[type='checkbox']{
+        display: none;
+    }
+
+    #nav-checkbox:checked ~ .nav-menu{
+        background: rgb(80, 128, 249);
+        margin-top: 10px ;
+        padding: 10px 0;
+        border-top: 1px solid rgba(229, 207, 16, 0.973);
+    }
+
+    .nav-menu li{
+        display: none;
+        margin: 10px 0;
+    }
+
+    #nav-checkbox:checked ~ ul.nav-menu li{
+        display: block;
+    }
+    #nav-checkbox:checked ~ label.nav-toggle .open{
+        display: blo;
+    }
+    
+}
+
+
 
 .cloud {
     background-image: url('/client/src/assets/img/cloud.jpg'); /* Imagen de la nube */
@@ -100,27 +190,4 @@ header {
     100% {
         transform: translateX(100%) 
     }
-}
-
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.cart img {
-    width: 30px; /* Tamaño del icono de carrito */
-    height: auto;
 }
