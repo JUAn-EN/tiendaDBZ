@@ -9,3 +9,11 @@ div img{
     border-radius: 50%;
 
 }
+@media only screen and (max-width: 650px){
+    .gohan{
+        display: none;
+    }
+    .vegito{
+        display: none;
+    }
+}
